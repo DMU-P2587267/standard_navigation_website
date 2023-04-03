@@ -157,6 +157,7 @@ p{
 
 .closeBtn {
   float: right;
+  cursor: pointer;
 }
 
 /* *The close button for the pop up was put the the right side using the float element. */
