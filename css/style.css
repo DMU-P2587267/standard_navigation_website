@@ -118,6 +118,7 @@ p{
   width: 25%;
   padding: 20px;
   margin-left: 60px;
+  cursor: pointer;
 }
 
 /* The thumbnail of the popups were given a width of 25% so that they're not too big and don't take up too much space on the page. The images were floated from the value 'left' so they lined up together like a grid. */
