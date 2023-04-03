@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!--<!DOCTYPE html> is used to tell the browser that the page you want it to load is a HTML page.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage for the history of anime website." />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+    <title> History of Anime </title>
+  </head>
+
+<!-- The <head> element is placed between the <html> and <body> elements, this contains the metadata of the html as shown in the <head> element above.
+     The <body> consists of the htmls documents such as the headings, paragraphs, images and etc.
+     The <title> element is where you write the name of the html page, which is found in the <head> element.
+-->
+  
+<body class="home">
+
+  <div>
+  <h1 id="mainheading"> History of Anime </h1>
+  </div>
+
+ <!--The <h> element is used here so that it shows what info is going to be shown under it.
+ -->
+
+ <div class="container">
+  <a href="index.html" class="item">Home</a>
+  <a href="topics.html" class="item">Topics</a>
+  <a href="extras.html" class="item">Extras</a>
+  <a href="contacts.html" class="item">Contact Us</a>
+</div>
+
+<!--I used the <a> element here so that the two pages are linked to this page,so the user can go back and forth between the pages.
+    -->
+
+ <p id="heading"> Welcome to our website which will go through the evolution of anime throughout the years from when it was created, and to how it is now in the current period of time. 
+  Below is a montage of different anime shows over the years put into a short clip that's under a minute, be sure to watch it.
+ </p>
+
+<!--The <p> element is used here so that I can put in text such as a summary of the movie and close it, so that it tells the code that it's finished with that element.
+    -->
+
+<video autoplay="autoplay" loop="loop" muted defaultMuted playsinline width="320" height="240" controls width="25%">
+
+<!-- Autoplay was added so that the video starts up for the user because without this attribute the play button was hard to select for mobile users and the video wasn't shown
+     unless the play button was pressed. The video has been put on loop so that it's easier for the user to rewatch the video if they wanted to after watching it for the first
+     time. The video is muted by default because the user(s) might get a jump scare with the audio playing without their control especially if their volume was on high. -->
+
+<source src="vid/webm.webm" type="video/webm" />
+<source src="vid/ogv.ogv" type="video/ogv" />
+<source src="vid/mp4.mp4" type="video/mp4" />
+<p> Sorry to tell you that your broswer does not support the video element shown on the page. However there is an alternative way of viewing the video, which is by clicking the link below.
+<a href="video/mp4.mp4">Anime montage clip</a></p>
+</video>
+
+<!--The <video> element is put here so that I can include a video on my webpage. There are 3 formats here, so that on the broswer if one format doesn't work, the browser can then use one of that other two that it can use.
+  The <a> element is then used after that, so that if the browser doesn't support either of the formats, they can view it on a seperate tab by clicking on the link given. In other words, this is called the fallback.
+  The video is controled within the <video> element where the size of the video is set and if I wanted the video to play by itself and look, I can use values like loop or autoplay to control it, or just leave it so that the user can choose whether to play the video or not.
+  </video> is put at the end after the video element is put in, so that it tells the browser that the <video> section is done so that elements after that such as for this example the <footer> becomes visible for the user.
+-->
+
+<footer> Website made by Thajeepan Rathiharan P2587267 </footer>
+</body>
+</html>
+
+<!--</body> element is used to close the <body> of the page and </html> is used to tell the browser that's the end of page.
+-->
+
+<!-- </html> is used to close the the <html> tag in other words end it -->

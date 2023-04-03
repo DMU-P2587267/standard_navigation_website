@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Topics page for the history of anime website." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title> History of Anime </title>
+  </head>
+<body class="topic">
+
+  <div>
+  <h1 id="mainheading"> Topics </h1>
+</div>
+
+<div class="container">
+    <a href="index.html" class="item">Home</a>
+    <a href="topics.html" class="item">Topics</a>
+    <a href="extras.html" class="item">Extras</a>
+    <a href="contacts.html" class="item">Contact Us</a>
+  </div>
+
+<div>
+<p id="heading"> This page contains various topics on the history of anime, going from the beginning, the current era, controversies going on around anime and the pros and cons about watching it.
+  Click on the images below and find out how anime has grown over the years. </p>  
+</div>
+
+  <body>
+    <img
+      src="img/early1.jpeg"
+      class="imgThumbnail"
+      alt="Early Years anime"
+      id="earlyImage"
+    />
+
+    <!-- This image is what's shown on the page to start with. Clicking the
+         image will show the popup. That's because there's an event listener
+         on the image. This could be more than an image - it could have a
+         title underneath it, a border a little text etc. -->
+
+    <div id="earlyInfo" class="popup">
+
+      <!-- This div is the popup. It's the full size of the screen, with a white
+       background. It has a white content area in the middle
+       that has the contents of the popout. It's hidden by default by setting its
+       display property to none.-->
+
+      <div class="inside">
+        <div id="earlyCloseBtn" class="closeBtn">X</div>
+        <h1>Early Years of anime</h1>
+        <img src="img/early2.jpg" alt="early" />
+        <p class="text-colour">
+        Anime is now known as hand drawn computer generated animations coming from manga panels. However, when it was first created dates back to the early 1900's. However, it is unknown whether it was shown to a public audience or not, but later in the 1950's it found its success after it was being adapted from manga novel panels and bringing characters audiences loved reading about to life using just chalk and board, but after a few years in the late 1950's they began to add colour and progressed from there onwards.
+        </p>
+      </div>
+    </div>
+
+    <script>
+
+      /* In this simple version of a popout we need a pair of functions
+         and a pair of event listeners for each popout. The functions are to
+         hide and show the popout by changing the value of its display property.
+         */
+
+      showGreenpeace = () => {
+        document.getElementById("earlyInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("earlyInfo").style.display = "none";
+      };
+
+      /* There are two event listeners. The first in on the image and runs the
+         function to show the popup. The second is on the close button inside
+         the popup, and runs the function to close the popup.
+         If you wanted to add another image and popup, you'd need to duplicate
+         all of this code, but with new ids and function names for the new
+         popup. */
+
+      document
+        .getElementById("earlyImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("earlyCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+
+    <!-- the </script> tag is used to end the script enabling another <script> to be opened for the other pop ups that will be added on to the page. -->
+
+  </body>
+
+    <body>
+      <img
+        src="img/sg.jpg"
+        class="imgThumbnail"
+        alt="Studio Ghibli"
+        id="sgImage"
+      />
+      <div id="sgInfo" class="popup">
+        <div class="inside">
+          <div id="sgCloseBtn" class="closeBtn">X</div>
+          <h1>Studio Ghibli</h1>
+          <img src="img/studioghibli.jpg" alt="sg" />
+          <p class="text-colour">
+          Studio Ghibli is an animation studio based in Japan founded by Hayao Miyazaki, Toshio Suzuki, Isao Takahata and Yasuyoshi Tokuma on the 15th of June 1985 in Tokyo based in Japan, which is where the studio is located. The studio is well known for their animated movies such as My Neighbor Totoro, Ponyo, Princess Mononoke, Kiki's Delivery Service, Spirited Away which is said to be one of the greatest films of all time and many others. The studio is also known to have made some tv adverts and tv shows, but it is most recognisable for the movies it has produced and easily recognised with it's characters that have come to life such as Totoro the giant cat (on the studio logo) and Ponyo. The reason why the studio is a big thing is because the films made by the studio have all won awards for the story and art, therefore inspiring other animation companies later to come and been praised a lot for their high quality productions.
+          </p>
+        </div>
+      </div>
+
+      <script>
+        showGreenpeace = () => {
+          document.getElementById("sgInfo").style.display = "block";
+        };
+        hideGreenpeace = () => {
+          document.getElementById("sgInfo").style.display = "none";
+        };
+        document
+          .getElementById("sgImage")
+          .addEventListener("click", showGreenpeace);
+        document
+          .getElementById("sgCloseBtn")
+          .addEventListener("click", hideGreenpeace);
+      </script>
+  </body>
+
+  <body>
+    <img
+      src="img/studios1.jpg"
+      class="imgThumbnail"
+      alt="Animation Studios"
+      id="studioImage"
+    />
+    <div id="studioInfo" class="popup">
+      <div class="inside">
+        <div id="studioCloseBtn" class="closeBtn">X</div>
+        <h1>Animation Studios</h1>
+        <img src="img/studios2.jpg" alt="studios" />
+
+        <p class="text-colour">
+         Animation studios are the reason why anime is the reason why anime exists and fans favourite manga series' have been bought to life on their screens to watch and enjoy. Some of the well known animation studios are Studio Ghibli, Madhouse, Kyoto Animation, Toei Animation, Sunrise Studio and many more. However, even though they're well known for some of the famous anime shows/ films out there, it costs a lot of money to animate even just one panel, in other words scenes because there's a lot of time that gets put into the detail of the animation such as colouring, character design, storyboards being put together, and getting voice actors. All this means a lot of money is needed to be put into the creation of the anime, so in order to do it the animation studio has to do their best to do it, and in return if the show is popular and aired on popular channels and has a good source of attraction, in other words income, the animation studio will be making money back for spending a lot to bring fans beloved characters to life.
+         But not all anime studios are successful, so their investors, which would be tv channels and other business' might pull out and suggest they either stop their production if the show isn't doing well, or might tell them they're changing the animation studio and hand over the rights to the show to another animation studio. This is the case some times, but in more recent times this has only happened so the show keeps its audience by evolving the shows animation to make it look good and stand up to its competitors. 
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("studioInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("studioInfo").style.display = "none";
+      };
+      document
+        .getElementById("studioImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("studioCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+</body>
+
+  <body>
+    <img
+      src="img/mid.jpg"
+      class="imgThumbnail"
+      alt="Mid 2000's"
+      id="midImage"
+    />
+    <div id="midInfo" class="popup">
+      <div class="inside">
+        <div id="midCloseBtn" class="closeBtn">X</div>
+        <h1>Mid 2000's anime</h1>
+        <img src="img/mid2000.jpg" alt="mid" />
+        <p class="text-colour">
+        During the early 2000's was when anime popped off in many countries outside of Japan, examples being America, England, Africa and other countries around the world. This was because it's when more and more anime shows were being created and creating fan bases and gaining more and more audiences with the new ways they animated the shows. It's stated that anime in the early 2000's were known to be more realistic and attractive as studios did their best with the animations due to digital editing not being a thing in those early days. Some names of the anime that came out in the early 2000's are Dragon Ball, Bleach, Inuyasha, Naruto, Avatar the last airbender, YuGiOh, Death Note, Full Metal Alchemist and many more. As it gained popularity, American companies bought rights to some anime tv shows to air on their channels such as Jetix, Cartoon Network and FOX Kids TV which was good for anime as a whole because it gained many audiences worldwide, and to thise day some of the shows from the early 2000's are still continued such as Pokemon, Bleach and Dragon Ball.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("midInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("midInfo").style.display = "none";
+      };
+      document
+        .getElementById("midImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("midCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/current.jpg"
+      class="imgThumbnail"
+      alt="Current era"
+      id="currentImage"
+    />
+    <div id="currentInfo" class="popup">
+      <div class="inside">
+        <div id="currentCloseBtn" class="closeBtn">X</div>
+        <h1>Current Era of anime</h1>
+        <img src="img/current2.jpg" alt="current" />
+        <p class="text-colour">
+         As anime has become a part of many peoples livese of many ages in this current era in time and is exposed to audiences around the world more and more via its presence on streaming sites such as Crunchyroll, Amazon Anime, Funimation, Netflix and many others. Not only that but, anime is also presented via fan animations, clip edits made of scenes in shows and even made into live action movies such as Death Note, Dragonball Evolution, Assassination Classroom, Alita: Battle Angel and some others. 
+         In the past animation studios would work on one animating a series one by one, however as we're in the digital era where technology is evolving every day, technology has made it easier to create storyboards, draw, copy and colour scenes making them be able to have different groups work on different shows being animated.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("currentInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("currentInfo").style.display = "none";
+      };
+      document
+        .getElementById("currentImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("currentCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+  <body>
+    <img
+      src="img/future1.jpg"
+      class="imgThumbnail"
+      alt="Future anime"
+      id="futureImage"
+    />
+    <div id="futureInfo" class="popup">
+      <div class="inside">
+        <div id="futureCloseBtn" class="closeBtn">X</div>
+        <h1>Future of anime</h1>
+        <img src="img/future2.jpg" alt="future" />
+        <p class="text-colour">
+        As anime is increasing worldwide and it is shown as being used as brand ambassadors by being printed on clothes, created into games, made into smaller spin off shows, the presence of anime increases everyday. 
+        This means that anime is most likely to keep growing its fanbase in the future as the global anime market was at $22.6 billion in 2020 and is said to be going up to at least $48.3 billion by 2030 which is only 7 years away from now.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      showGreenpeace = () => {
+        document.getElementById("futureInfo").style.display = "block";
+      };
+      hideGreenpeace = () => {
+        document.getElementById("futureInfo").style.display = "none";
+      };
+      document
+        .getElementById("futureImage")
+        .addEventListener("click", showGreenpeace);
+      document
+        .getElementById("futureCloseBtn")
+        .addEventListener("click", hideGreenpeace);
+    </script>
+  </body>
+
+<footer> Website made by Thajeepan Rathiharan P2587267 </footer>
+</body>
+</html>
